@@ -2,17 +2,17 @@
       <title>Network-Booting</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      
-      <link rel="stylesheet" href="file:////home/nick/.vscode-oss/extensions/dendron.dendron-markdown-preview-enhanced-0.9.4/node_modules/@dendronhq/mume/dependencies/katex/katex.min.css">
-      
-      
-      
-      <script type="text/javascript" src="file:////home/nick/.vscode-oss/extensions/dendron.dendron-markdown-preview-enhanced-0.9.4/node_modules/@dendronhq/mume/dependencies/mermaid/mermaid.min.js" charset="UTF-8"></script>
-      
-      
-      
-      
-      
+
+      <link rel="stylesheet" href="/katex.min.css">
+
+
+
+      <script type="text/javascript" src="/mermaid.min.js" charset="UTF-8"></script>
+
+
+
+
+
       <style>
       /**
  * prism.js Github theme based on GitHub's theme.
@@ -231,7 +231,7 @@ pre[data-line] .line-highlight {
   white-space: pre;
 }
 
-pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight:before,
 pre[data-line] .line-highlight[data-end]:after {
   content: attr(data-start);
   position: absolute;
@@ -356,7 +356,7 @@ pre[data-line] .line-highlight[data-end]:after {
 <h1 class="mume-header" id="basic-overview">Basic Overview</h1>
 
 <div class="mermaid">graph TD
-    A[Power on] --&gt;B[Initialize Hardware] --&gt;C[Run self-tests] 
+    A[Power on] --&gt;B[Initialize Hardware] --&gt;C[Run self-tests]
 C[&quot;Run self-tests&quot;] --&gt; D{?}-- Error ---id2(Computer Stopped)
 D --- E[Discover bootable]-- No problems ---G[Discover OP-ROM] --&gt; H[Start first service in boot order] --&gt; id3(Boot service performs discovery) --&gt; id4{?} --&gt; I[start boot program]
 id4-- no boot program found --&gt;j[Move last service to bottom]-- Retry boot services --&gt;id2
@@ -416,8 +416,8 @@ I-- program found --&gt;j[Boot Program]-- OS started --&gt; m[New environment]
 </ul>
 </div>
       <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
+
+
     <script>
 // config mermaid init call
 // http://knsv.github.io/mermaid/#configuration
@@ -452,11 +452,11 @@ if (typeof(window['Reveal']) !== 'undefined') {
   mermaid.init(null, document.getElementsByClassName('mermaid'))
 }
 </script>
-    
-    
-    
-    
-    
+
+
+
+
+
 <script>
 
 var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
@@ -469,6 +469,6 @@ sidebarTOCBtn.addEventListener('click', function(event) {
   }
 })
 </script>
-      
-  
+
+
     </body></html>
