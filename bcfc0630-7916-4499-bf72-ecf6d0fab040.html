@@ -258,6 +258,18 @@ pre[data-line] .line-highlight[data-end]:after {
       </style>
     </head>
     <body for="html-export">
+    <script>
+    var config = {
+        startOnLoad:true,
+        theme: 'forest',
+        flowchart:{
+                useMaxWidth:false,
+                htmlLabels:true
+            }
+    };
+    mermaid.initialize(config);
+    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+    </script>
       <div class="mume markdown-preview  " id="bcfc0630-7916-4499-bf72-ecf6d0fab040">
       <h1 class="mume-header" id="framework-deployment">Framework // <a href="Deployment.html">Deployment</a></h1>
 
@@ -364,17 +376,5 @@ sidebarTOCBtn.addEventListener('click', function(event) {
 
 </script>
 
-<script>
-var config = {
-    startOnLoad:true,
-    theme: 'forest',
-    flowchart:{
-            useMaxWidth:false,
-            htmlLabels:true
-        }
-};
-mermaid.initialize(config);
-window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-</script>
 
     </body></html>
